@@ -26,7 +26,7 @@ for i in range(1, n+1):
     response = urlopen(base_url + "/Page-%d.html" % i)
     html = response
 
-# data parsing
+    # data parsing
     soup = BeautifulSoup(html.read().decode('utf-8'),"lxml")
     table = soup.find('div', {'class':'tableGrid__column tableGrid__column--articleContent category'})
     for a in table.find_all('a', href=True)[::2][:-5]:
