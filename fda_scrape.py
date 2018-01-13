@@ -4,9 +4,9 @@ import MySQLdb
 
 #mysql portion
 mydb = MySQLdb.connect(host='localhost',
-       user= 'root',
-       passwd='MYSQL',
-       db='testdb')
+       user= 'user',
+       passwd='password',
+       db='dbname')
 cur = mydb.cursor()
 def store (drug_name, active_ingredient, dosage_form_route, sponsor, submission_type):
         cur.execute('INSERT IGNORE INTO FDA (drug_name, active_ingredient, dosage_form_route, sponsor, submission_type) VALUES (\"%s\", \"%s\", \"%s\", \"%s\", \"%s\")',(drug_name, active_ingredient, dosage_form_route, sponsor, submission_type))
