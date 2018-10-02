@@ -12,7 +12,7 @@ def store (drug_name, active_ingredient, dosage_form_route, sponsor, submission_
         cur.execute('INSERT IGNORE INTO FDA (drug_name, active_ingredient, dosage_form_route, sponsor, submission_type) VALUES (\"%s\", \"%s\", \"%s\", \"%s\", \"%s\")',(drug_name, active_ingredient, dosage_form_route, sponsor, submission_type))
         cur.connection.commit()
 
-base_url = 'http://www.fda.gov/Drugs/NewsEvents/ucm130961.htm'
+base_url = 'https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=report.page'
 html = requests.get(base_url)
 soup = BeautifulSoup(html.content, "html.parser")
 
