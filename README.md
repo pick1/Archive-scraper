@@ -8,7 +8,7 @@ packages:
 
 #### fda_scrape.py
 
-Programmatically accesses the FDA.gov website to retreive most recent FDA data related to the pharmaceutical approval process. Data is subsequently broken down into constituent pieces (drug name, ingredient, company etc...). The resultant data is then stored in a relational database (MySQL).
+Programmatically accesses the FDA.gov website. Retreives most recent company data published by the FDA related to the pharmaceutical approval process. Data is subsequently broken down into constituent pieces (drug name, ingredient, company etc...). The resultant data is then stored in a Pandas DataFrame to expedite the desired storage process.
 
 #### oil_scrape.py
 
