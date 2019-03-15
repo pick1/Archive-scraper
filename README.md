@@ -7,7 +7,8 @@ Programmatically accesses the FDA.gov website to retreive most recent FDA data r
 
 packages:
  - BeautifulSOup
- - MysSQLdb
+ - Pandas
+ - requests
 
 #### oil_scrape.py
 
