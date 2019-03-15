@@ -36,4 +36,4 @@ df = pd.DataFrame(list(zip(titles, authors, dates, pitches, links, abstracts)),
                   columns=['titles', 'authors', 'dates',
                            'pitches', 'links', 'abstracts'])
 df.dates = pd.to_datetime(df.dates)
-print(df)
+
