@@ -11,4 +11,4 @@ packages:
 
 #### oil_scrape.py
 
-Programmatically accesses energy news from oilprice.com to retreive recent headlines and article links related to the energey sector. Data is checked for uniqueness before being sent to storage.
+Python script for programmatically accessing energy news from oilprice.com. Uses `requests` and BeautifulSoup to retreive recent headlines and article links related to the energey sector. Default gathers headlines and summaries from the frontpage. Alter `n=x` to the depth of the pages to scrape (current page count is 906). Data for each is appended to a list, zipped and formatted to Pandas DataFrame for ease of storage (flat file, database etc...).
